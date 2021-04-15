@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             isSprinting = false;
         }
 
-        if (isSprinting == true && isWalking == true)
+        if (isSprinting == true && isWalking == true && isGrounded == true)
         {
             runningTimer += 1 * Time.deltaTime;
         }
