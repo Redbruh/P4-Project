@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity -= new Vector3(0, fallSpeed, 0);
         }
 
-        if (isGrounded == true && rb.velocity.y < -5f)
+        if (isGrounded == true && rb.velocity.y < -3f)
         {
             isGrounded = false;
         }
