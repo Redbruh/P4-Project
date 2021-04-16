@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     public float runningTimer;
+    public float maxRunningTimer;
+    public float minRunningTimer;
     public float normalMoveSpeed;
     public float runSpeedFirst;
     public float runSpeedSecond;
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
             isWalking = false;
         }
 
-        if (Input.GetButton("Fire3"))
+        if (Input.GetButton("Fire3") && isWalking == true)
         {
             isSprinting = true;
         }
@@ -52,7 +54,7 @@ public class PlayerController : MonoBehaviour
             isSprinting = false;
         }
 
-        if (isSprinting == true && isWalking == true && isGrounded == true)
+        if (isSprinting == true && isWalking == true)
         {
             runningTimer += 1 * Time.deltaTime;
         }
@@ -61,22 +63,35 @@ public class PlayerController : MonoBehaviour
             runningTimer = 0;
         }
 
+        if (runningTimer >= maxRunningTimer)
+        {
+            runningTimer = maxRunningTimer;
+        }
+        if (runningTimer <= minRunningTimer)
+        {
+            runningTimer = minRunningTimer;
+        }
+
         if (runningTimer > 0)
         {
             moveSpeed = runSpeedFirst;
+            jumpHeight = 9;
         }
         else
         {
             moveSpeed = normalMoveSpeed;
+            jumpHeight = 10;
         }
 
         if (runningTimer >= 1)
         {
             moveSpeed = runSpeedSecond;
+            jumpHeight = 8;
         }
         if (runningTimer >= 2)
         {
             moveSpeed = runSpeedThird;
+            jumpHeight = 7;
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -111,6 +126,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
+            runningTimer = 0;
         }
         else
         {
