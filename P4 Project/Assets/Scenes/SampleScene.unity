@@ -216,7 +216,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &490143929
 GameObject:
@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 1071803053}
   - component: {fileID: 1071803052}
   - component: {fileID: 1071803051}
+  - component: {fileID: 1071803057}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -357,13 +358,13 @@ MonoBehaviour:
   runSpeedFirst: 10
   runSpeedSecond: 15
   runSpeedThird: 20
-  jumpHeight: 10
+  jumpHeight: 0
   gravity: 5
   isWalking: 0
   isSprinting: 0
   isGrounded: 0
   isFalling: 0
-  rb: {fileID: 1071803052}
+  rb: {fileID: 0}
 --- !u!54 &1071803052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -455,8 +456,21 @@ Transform:
   m_Children:
   - {fileID: 490143930}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071803057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071803050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f4d166e2c0f7c49a245f5b155e239b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &1355199423
 GameObject:
   m_ObjectHideFlags: 0

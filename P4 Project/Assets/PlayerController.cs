@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public bool isFalling;
     public Rigidbody rb;
+    public RaycastHit hit;
 
     private void Start()
     {
@@ -26,6 +27,17 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
+        {
+            if (hit.collider.gameObject.tag == "Enemy")
+            {
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    hit.collider.GetComponent<Health>().DoDamage(1);
+                }
+            }
+        }
+
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
