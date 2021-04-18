@@ -358,13 +358,14 @@ MonoBehaviour:
   runSpeedFirst: 10
   runSpeedSecond: 15
   runSpeedThird: 20
-  jumpHeight: 0
+  jumpHeight: 10
+  strafeDistance: 5
   gravity: 5
   isWalking: 0
   isSprinting: 0
   isGrounded: 0
   isFalling: 0
-  rb: {fileID: 0}
+  rb: {fileID: 1071803052}
 --- !u!54 &1071803052
 Rigidbody:
   m_ObjectHideFlags: 0
