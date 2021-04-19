@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (transform.position.y <= -50)
+        {
+            transform.gameObject.GetComponent<Health>().DoDamage(1);
+        }
+
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
             if (hit.collider.gameObject.tag == "Enemy")
