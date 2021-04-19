@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(move * moveSpeed * Time.deltaTime);
 
-        if (rb.transform.hasChanged)
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0 && isGrounded)
         {
             isWalking = true;
             rb.transform.hasChanged = false;
