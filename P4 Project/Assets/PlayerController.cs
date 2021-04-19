@@ -16,10 +16,14 @@ public class PlayerController : MonoBehaviour
     public float gravity;
     public bool isWalking;
     public bool isSprinting;
+    public GameObject cloudsToSpawn;
+    public float cloudTimer;
+    public float maxCloudTimer;
     public bool isGrounded;
     public bool isFalling;
     public Rigidbody rb;
     public RaycastHit hit;
+    public int crystalsCollected;
 
     private void Start()
     {
@@ -84,10 +88,22 @@ public class PlayerController : MonoBehaviour
             runningTimer = minRunningTimer;
         }
 
+        Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
+        Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
+
         if (runningTimer > 0)
         {
             moveSpeed = runSpeedFirst;
             jumpHeight = 9;
+            if (isGrounded == true)
+            {
+                cloudTimer += Time.deltaTime;
+                if (cloudTimer >= maxCloudTimer)
+                {
+                    cloudTimer = 0;
+                    Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
+                }
+            }
         }
         else
         {
@@ -99,17 +115,36 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedSecond;
             jumpHeight = 8;
+            if (isGrounded == true)
+            {
+                cloudTimer += Time.deltaTime;
+                if (cloudTimer >= maxCloudTimer)
+                {
+                    cloudTimer = 0;
+                    Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
+                }
+            }
         }
         if (runningTimer >= 2)
         {
             moveSpeed = runSpeedThird;
             jumpHeight = 7;
+            if (isGrounded == true)
+            {
+                cloudTimer += Time.deltaTime;
+                if (cloudTimer >= maxCloudTimer)
+                {
+                    cloudTimer = 0;
+                    Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
+                }
+            }
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector3(0, jumpHeight, 0);
             isGrounded = false;
+            Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
         }
 
         if (rb.velocity.y <= 0f && isGrounded == false)
