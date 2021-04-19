@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
             jumpHeight = 10;
         }
 
-        if (runningTimer >= 1)
+        if (runningTimer >= 2)
         {
             moveSpeed = runSpeedSecond;
             jumpHeight = 8;
@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        if (runningTimer >= 2)
+        if (runningTimer >= 4)
         {
             moveSpeed = runSpeedThird;
             jumpHeight = 7;
