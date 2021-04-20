@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float runSpeedFirst;
     public float runSpeedSecond;
     public float runSpeedThird;
+    public float standingStillTimer;
+    public float maxStandingStillTimer;
     public float jumpHeight;
     public float gravity;
     public bool isWalking;
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (transform.position.y <= -50)
+        if (transform.position.y <= -25)
         {
             transform.gameObject.GetComponent<Health>().DoDamage(1);
         }
@@ -59,11 +61,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0 && isGrounded)
         {
             isWalking = true;
-            rb.transform.hasChanged = false;
         }
         else
         {
             isWalking = false;
+        }
+
+        if(runningTimer > 0)
+        {
+            if (rb.IsSleeping() && isGrounded)
+            {
+                runningTimer = 0;
+            }
         }
 
         if (Input.GetButton("Fire3") && isWalking == true)
@@ -71,6 +80,11 @@ public class PlayerController : MonoBehaviour
             isSprinting = true;
         }
         else
+        {
+            isSprinting = false;
+        }
+
+        if(isWalking == false)
         {
             isSprinting = false;
         }
@@ -96,7 +110,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedFirst;
             jumpHeight = 9;
-            if (isGrounded == true)
+            if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
                 if (cloudTimer >= maxCloudTimer)
@@ -116,7 +130,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedSecond;
             jumpHeight = 8;
-            if (isGrounded == true)
+            if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
                 if (cloudTimer >= maxCloudTimer)
@@ -130,7 +144,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedThird;
             jumpHeight = 7;
-            if (isGrounded == true)
+            if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
                 if (cloudTimer >= maxCloudTimer)
