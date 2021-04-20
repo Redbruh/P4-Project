@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
     public float runSpeedFirst;
     public float runSpeedSecond;
     public float runSpeedThird;
-    public float standingStillTimer;
-    public float maxStandingStillTimer;
     public float jumpHeight;
     public float gravity;
     public bool isWalking;
