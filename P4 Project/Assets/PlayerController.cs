@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedFirst;
             jumpHeight = 7;
-            jumpDistance = 2;
+            jumpDistance = 3;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedSecond;
             jumpHeight = 6;
-            jumpDistance = 4;
+            jumpDistance = 6;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedThird;
             jumpHeight = 5;
-            jumpDistance = 10;
+            jumpDistance = 9;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
