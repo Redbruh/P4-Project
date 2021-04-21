@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float runSpeedSecond;
     public float runSpeedThird;
     public float jumpHeight;
+    public float jumpDistance;
+    public bool applyForwardMomentum;
     public float gravity;
     public bool isWalking;
     public bool isSprinting;
@@ -31,6 +33,9 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
+        Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
+
         if (transform.position.y <= -25)
         {
             transform.gameObject.GetComponent<Health>().DoDamage(1);
@@ -65,12 +70,22 @@ public class PlayerController : MonoBehaviour
             isWalking = false;
         }
 
-        if(runningTimer > 0)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            if (rb.IsSleeping() && isGrounded)
-            {
-                runningTimer = 0;
-            }
+            rb.velocity = new Vector3(0, jumpHeight, 0);
+            applyForwardMomentum = true;
+            isGrounded = false;
+            Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            applyForwardMomentum = false;
+        }
+
+        if (applyForwardMomentum == true)
+        {
+            rb.AddForce(transform.forward * jumpDistance);
         }
 
         if (Input.GetButton("Fire3") && isWalking == true)
@@ -101,13 +116,19 @@ public class PlayerController : MonoBehaviour
             runningTimer = minRunningTimer;
         }
 
-        Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
-        Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
+        if (runningTimer > 0)
+        {
+            if (rb.IsSleeping() && isGrounded)
+            {
+                runningTimer = 0;
+            }
+        }
 
         if (runningTimer > 0)
         {
             moveSpeed = runSpeedFirst;
-            jumpHeight = 9;
+            jumpHeight = 7;
+            jumpDistance = 2;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -121,13 +142,15 @@ public class PlayerController : MonoBehaviour
         else
         {
             moveSpeed = normalMoveSpeed;
-            jumpHeight = 10;
+            jumpHeight = 8;
+            jumpDistance = 0;
         }
 
         if (runningTimer >= 2)
         {
             moveSpeed = runSpeedSecond;
-            jumpHeight = 8;
+            jumpHeight = 6;
+            jumpDistance = 4;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -141,7 +164,8 @@ public class PlayerController : MonoBehaviour
         if (runningTimer >= 4)
         {
             moveSpeed = runSpeedThird;
-            jumpHeight = 7;
+            jumpHeight = 5;
+            jumpDistance = 10;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -151,13 +175,6 @@ public class PlayerController : MonoBehaviour
                     Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
                 }
             }
-        }
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.velocity = new Vector3(0, jumpHeight, 0);
-            isGrounded = false;
-            Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
         }
 
         if (rb.velocity.y <= 0f && isGrounded == false)
