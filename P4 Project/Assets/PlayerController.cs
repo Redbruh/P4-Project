@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = runSpeedThird;
             jumpHeight = 5;
-            jumpDistance = 9;
+            jumpDistance = 12;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
