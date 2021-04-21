@@ -24,8 +24,9 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public bool isFalling;
     public Rigidbody rb;
-    public RaycastHit hit;
     public int crystalsCollected;
+    public GameObject sword;
+    public Vector3 swordRotation;
 
     private void Start()
     {
@@ -41,15 +42,13 @@ public class PlayerController : MonoBehaviour
             transform.gameObject.GetComponent<Health>().DoDamage(1);
         }
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (hit.collider.gameObject.tag == "Enemy")
-            {
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    hit.collider.GetComponent<Health>().DoDamage(1);
-                }
-            }
+            sword.transform.Rotate(swordRotation);
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            sword.transform.Rotate(-swordRotation);
         }
 
         float h = Input.GetAxis("Horizontal");

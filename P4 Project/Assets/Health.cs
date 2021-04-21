@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
 
     public void AddHealth(int healthadded)
     {
-        health += healthadded ;
+        health += healthadded;
     }
 
     void Update()

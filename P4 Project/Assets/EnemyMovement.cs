@@ -6,7 +6,6 @@ public class EnemyMovement : MonoBehaviour
 {
     public Transform toFollow;
     public float moveSpeed;
-    public float knockback;
 
     void Update()
     {
