@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SwordCollision : MonoBehaviour
 {
-    public Rigidbody enemy;
-    public float knockback;
 
     public void OnCollisionEnter(Collision collision)
     {

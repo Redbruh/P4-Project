@@ -358,8 +358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd66e2fe622dcf449cafd98499d1f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  knockback: 20
 --- !u!54 &160831344
 Rigidbody:
   m_ObjectHideFlags: 0
