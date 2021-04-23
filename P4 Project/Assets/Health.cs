@@ -15,12 +15,4 @@ public class Health : MonoBehaviour
     {
         health += healthadded;
     }
-
-    void Update()
-    {
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
 }

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool isSprinting;
     public bool isGrounded;
     public bool isFalling;
+    public Vector3 checkpoint;
     public GameObject cloudsToSpawn;
     public float cloudTimer;
     public float maxCloudTimer;
@@ -30,6 +31,12 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
+
+        if(GetComponent<Health>().health <= 0)
+        {
+            gameObject.transform.position = checkpoint;
+            GetComponent<Health>().health = 5;
+        }
 
         if (transform.position.y <= -10)
         {
