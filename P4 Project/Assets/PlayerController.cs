@@ -4,26 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Rigidbody rb;
     public float moveSpeed;
     public float runningTimer;
     public float maxRunningTimer;
     public float minRunningTimer;
-    public float normalMoveSpeed;
-    public float runSpeedFirst;
-    public float runSpeedSecond;
-    public float runSpeedThird;
     public float jumpHeight;
     public float jumpDistance;
     public bool applyForwardMomentum;
     public float gravity;
     public bool isWalking;
     public bool isSprinting;
+    public bool isGrounded;
+    public bool isFalling;
     public GameObject cloudsToSpawn;
     public float cloudTimer;
     public float maxCloudTimer;
-    public bool isGrounded;
-    public bool isFalling;
-    public Rigidbody rb;
     public int crystalsCollected;
     public GameObject sword;
     public Vector3 swordRotation;
@@ -37,7 +33,7 @@ public class PlayerController : MonoBehaviour
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
 
-        if (transform.position.y <= -25)
+        if (transform.position.y <= -10)
         {
             transform.gameObject.GetComponent<Health>().DoDamage(1);
         }
@@ -125,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
         if (runningTimer > 0)
         {
-            moveSpeed = runSpeedFirst;
+            moveSpeed = 10;
             jumpHeight = 7;
             jumpDistance = 1;
             if (isGrounded == true && isSprinting == true)
@@ -140,14 +136,14 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            moveSpeed = normalMoveSpeed;
+            moveSpeed = 5;
             jumpHeight = 8;
             jumpDistance = 0;
         }
 
         if (runningTimer >= 2)
         {
-            moveSpeed = runSpeedSecond;
+            moveSpeed = 15;
             jumpHeight = 6;
             jumpDistance = 2;
             if (isGrounded == true && isSprinting == true)
@@ -162,7 +158,7 @@ public class PlayerController : MonoBehaviour
         }
         if (runningTimer >= 4)
         {
-            moveSpeed = runSpeedThird;
+            moveSpeed = 20;
             jumpHeight = 5;
             jumpDistance = 3;
             if (isGrounded == true && isSprinting == true)
