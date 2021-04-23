@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     public float maxRunningTimer;
     public float minRunningTimer;
     public float jumpHeight;
-    public float jumpDistance;
-    public bool applyForwardMomentum;
     public float gravity;
     public bool isWalking;
     public bool isSprinting;
@@ -68,20 +66,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector3(0, jumpHeight, 0);
-            applyForwardMomentum = true;
             isGrounded = false;
             Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
         }
 
-        if (Input.GetButtonUp("Jump"))
-        {
-            applyForwardMomentum = false;
-        }
-
-        if (applyForwardMomentum == true)
-        {
-            rb.AddForce(transform.forward * jumpDistance);
-        }
 
         if (Input.GetButton("Fire3") && isWalking == true)
         {
@@ -123,7 +111,6 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = 10;
             jumpHeight = 7;
-            jumpDistance = 1;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -138,14 +125,12 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = 5;
             jumpHeight = 8;
-            jumpDistance = 0;
         }
 
         if (runningTimer >= 2)
         {
             moveSpeed = 15;
             jumpHeight = 6;
-            jumpDistance = 2;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -160,7 +145,6 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = 20;
             jumpHeight = 5;
-            jumpDistance = 3;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
