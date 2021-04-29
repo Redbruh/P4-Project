@@ -19,7 +19,10 @@ public class PlayerController : MonoBehaviour
     public GameObject cloudsToSpawn;
     public float cloudTimer;
     public float maxCloudTimer;
+    public Transform crystals;
+    public float range;
     public int crystalsCollected;
+    public int crystalsNeeded;
     public GameObject sword;
     public Vector3 swordRotation;
 
@@ -74,7 +77,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector3(0, jumpHeight, 0);
             isGrounded = false;
-            Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
         }
 
 
@@ -108,16 +110,8 @@ public class PlayerController : MonoBehaviour
 
         if (runningTimer > 0)
         {
-            if (rb.IsSleeping() && isGrounded)
-            {
-                runningTimer = 0;
-            }
-        }
-
-        if (runningTimer > 0)
-        {
-            moveSpeed = 10;
-            jumpHeight = 7;
+            moveSpeed = 15;
+            jumpHeight = 9;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -127,17 +121,22 @@ public class PlayerController : MonoBehaviour
                     Instantiate(cloudsToSpawn, cloudSpawnPosition, Quaternion.identity);
                 }
             }
+
+            if (rb.IsSleeping() && isGrounded)
+            {
+                runningTimer = 0;
+            }
         }
         else
         {
-            moveSpeed = 5;
-            jumpHeight = 8;
+            moveSpeed = 10;
+            jumpHeight = 10;
         }
 
         if (runningTimer >= 2)
         {
-            moveSpeed = 15;
-            jumpHeight = 6;
+            moveSpeed = 20;
+            jumpHeight = 8;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -150,8 +149,8 @@ public class PlayerController : MonoBehaviour
         }
         if (runningTimer >= 4)
         {
-            moveSpeed = 20;
-            jumpHeight = 5;
+            moveSpeed = 25;
+            jumpHeight = 7;
             if (isGrounded == true && isSprinting == true)
             {
                 cloudTimer += Time.deltaTime;
@@ -183,17 +182,26 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        if (Vector3.Distance(crystals.position, transform.position) <= range)
+        {
+            transform.gameObject.GetComponent<Crystal>().collected(hasCollected = true);
+        }
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject)
         {
             isGrounded = true;
-            runningTimer = 0;
         }
         else
         {
             isGrounded = false;
+        }
+
+        if (collision.gameObject.tag == "Ground")
+        {
+            runningTimer = 0;
         }
     }
 }

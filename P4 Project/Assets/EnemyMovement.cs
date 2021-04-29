@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform toFollow;
+    public Transform player;
     public float moveSpeed;
+    public float range;
 
     void Update()
     {
-        transform.LookAt(toFollow);
-        GetComponent<Transform>().Translate(Vector3.forward * Time.deltaTime * moveSpeed);
+        if (transform.position.y <= -10)
+        {
+            transform.gameObject.GetComponent<Health>().DoDamage(1);
+        }
+
+        if (Vector3.Distance(player.position, transform.position) <= range)
+        {
+            transform.LookAt(player);
+            GetComponent<Transform>().Translate(Vector3.forward * Time.deltaTime * moveSpeed);
+        }
         if (GetComponent<Health>().health <= 0)
         {
             Destroy(gameObject);
