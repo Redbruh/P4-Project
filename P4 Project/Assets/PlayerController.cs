@@ -185,7 +185,7 @@ public class PlayerController : MonoBehaviour
 
         if (Vector3.Distance(crystals.position, transform.position) <= range)
         {
-            transform.gameObject.GetComponent<Crystal>().collected(hasCollected = true);
+            //transform.gameObject.GetComponent<Crystal>().collected(hasCollected = true);
         }
     }
     void OnCollisionEnter(Collision collision)
