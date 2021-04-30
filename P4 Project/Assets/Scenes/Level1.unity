@@ -1290,7 +1290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049387170990111384, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
       propertyPath: range
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9049387170990111384, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
       propertyPath: sword

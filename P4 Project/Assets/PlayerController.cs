@@ -183,9 +183,9 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
-        if (Vector3.Distance(crystals.position, transform.position) <= range)
+        if (Vector3.Distance(transform.position, crystals.position) <= range)
         {
-            //transform.gameObject.GetComponent<Crystal>().collected(hasCollected = true);
+            transform.gameObject.GetComponent<Crystal>().Collected(true);
         }
     }
     void OnCollisionEnter(Collision collision)

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Crystal : MonoBehaviour
 {
-    public void collected(bool hasCollected)
+    public void Collected(bool HasCollected)
     {
-        if (hasCollected == true)
+        if (HasCollected == true)
         {
             transform.gameObject.GetComponent<PlayerController>().crystalsCollected += 1;
             Destroy(gameObject);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9020900771233156785}
   - component: {fileID: 9020900771233156784}
   - component: {fileID: 9020900771233156787}
+  - component: {fileID: -5490660908010688162}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Crystal
@@ -81,3 +82,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-5490660908010688162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020900771233156796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9271b02ff71734c9553880b00f1ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
