@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     public GameObject cloudsToSpawn;
     public float cloudTimer;
     public float maxCloudTimer;
-    public float range;
-    public GameObject crystal;
     public int crystalsCollected;
     public int crystalsNeeded;
     public GameObject sword;
@@ -181,14 +179,6 @@ public class PlayerController : MonoBehaviour
         if (isGrounded == true && rb.velocity.y < -2f)
         {
             isGrounded = false;
-        }
-
-        float distance = Vector3.Distance(transform.position, crystal.transform.position);
-
-        if (distance <= range)
-        {
-            crystal.transform.gameObject.GetComponent<Crystal>().Collection();
-            crystalsCollected += 1;
         }
     }
     void OnCollisionEnter(Collision collision)

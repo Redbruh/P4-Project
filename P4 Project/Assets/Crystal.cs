@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Crystal : MonoBehaviour
 {
-    public void Collection()
+    public Transform player;
+    public float range;
+
+    public void Update()
     {
-        Destroy(gameObject);
+        if (Vector3.Distance(player.position, transform.position) <= range)
+        {
+            player.GetComponent<PlayerController>().crystalsCollected += 1;
+            Destroy(gameObject);
+        }
     }
 }
