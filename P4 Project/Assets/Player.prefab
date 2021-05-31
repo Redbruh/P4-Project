@@ -146,6 +146,7 @@ MonoBehaviour:
   crystalsNeeded: 0
   sword: {fileID: 0}
   swordRotation: {x: 0, y: 45, z: 0}
+  flagPole: {fileID: 0}
 --- !u!114 &7715220734985341632
 MonoBehaviour:
   m_ObjectHideFlags: 0
