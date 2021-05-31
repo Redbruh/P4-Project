@@ -23,10 +23,12 @@ public class PlayerController : MonoBehaviour
     public int crystalsNeeded;
     public GameObject sword;
     public Vector3 swordRotation;
+    public GameObject flagPole;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        flagPole.SetActive(false);
     }
     void Update()
     {
@@ -46,11 +48,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            sword.transform.Rotate(swordRotation);
+
         }
         if (Input.GetButtonUp("Fire1"))
         {
-            sword.transform.Rotate(-swordRotation);
+
         }
 
         float h = Input.GetAxis("Horizontal");
@@ -179,6 +181,11 @@ public class PlayerController : MonoBehaviour
         if (isGrounded == true && rb.velocity.y < -2f)
         {
             isGrounded = false;
+        }
+
+        if (crystalsCollected >= crystalsNeeded)
+        {
+            flagPole.SetActive(true);
         }
     }
     void OnCollisionEnter(Collision collision)
