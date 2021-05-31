@@ -1737,6 +1737,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &593137393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7715220734985341635, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+  m_PrefabInstance: {fileID: 7715220734504404018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &593137400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593137393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed72d8d97b1f7f74eaaf04c41f837b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  moveSpeed: 10
+  jumpHeight: 10
+  gravity: 10
+  isWalking: 0
+  canDash: 0
+  isGrounded: 0
+  isFalling: 0
+  checkpoint: {x: 0, y: 0, z: 0}
+  cloudsToSpawn: {fileID: 0}
+  cloudTimer: 0
+  maxCloudTimer: 0
+  crystalsCollected: 0
+  crystalsNeeded: 0
+  sword: {fileID: 0}
+  swordRotation: {x: 0, y: 0, z: 0}
+  flagPole: {fileID: 564602610}
+  dashingTimer: 0
+  dashDistance: 2
 --- !u!1001 &635860425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5734,6 +5770,14 @@ PrefabInstance:
       propertyPath: flagPole
       value: 
       objectReference: {fileID: 564602610}
+    - target: {fileID: 7715220734985341633, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715220734985341633, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+      propertyPath: dashDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7715220734985341633, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
       propertyPath: crystalsNeeded
       value: 52
