@@ -25,11 +25,15 @@ public class PlayerController : MonoBehaviour
     public Vector3 swordRotation;
     public GameObject flagPole;
     public bool isAttacking;
+    public GameObject attackRadiusOn;
+    public float lifes;
 
     private void Start()
     {
+        lifes = 5;
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
+        attackRadiusOn.SetActive(false);
     }
     void Update()
     {
@@ -40,6 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.position = checkpoint;
             GetComponent<Health>().health = 5;
+            lifes -= 1;
         }
 
         if (transform.position.y <= -10)
@@ -51,9 +56,18 @@ public class PlayerController : MonoBehaviour
         {
             isAttacking = true;
         }
-        if (Input.GetButtonUp("Fire1"))
+        else
         {
             isAttacking = false;
+        }
+
+        if (isAttacking == true)
+        {
+            attackRadiusOn.SetActive(true);
+        }
+        else
+        {
+            attackRadiusOn.SetActive(false);
         }
 
         float h = Input.GetAxis("Horizontal");
