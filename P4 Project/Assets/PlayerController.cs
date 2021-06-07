@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public GameObject sword;
     public Vector3 swordRotation;
     public GameObject flagPole;
+    public bool isAttacking;
 
     private void Start()
     {
@@ -48,11 +49,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-
+            isAttacking = true;
         }
         if (Input.GetButtonUp("Fire1"))
         {
-
+            isAttacking = false;
         }
 
         float h = Input.GetAxis("Horizontal");

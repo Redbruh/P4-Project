@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;
     public float moveSpeed;
     public float range;
+    public bool playerCanAttack;
+    public float playerCanAttackRange;
 
     void Update()
     {
@@ -23,6 +25,15 @@ public class EnemyMovement : MonoBehaviour
         if (GetComponent<Health>().health <= 0)
         {
             Destroy(gameObject);
+        }
+
+        if (Vector3.Distance(player.position, transform.position) <= playerCanAttackRange)
+        {
+            playerCanAttack = true;
+        }
+        else
+        {
+            playerCanAttack = false;
         }
     }
 

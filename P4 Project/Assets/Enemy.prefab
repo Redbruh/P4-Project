@@ -113,6 +113,7 @@ MonoBehaviour:
   player: {fileID: 0}
   moveSpeed: 10
   range: 25
+  playerCanAttackRange: 3
 --- !u!114 &6645341637155989049
 MonoBehaviour:
   m_ObjectHideFlags: 0
