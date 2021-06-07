@@ -25,8 +25,11 @@ public class PlayerController : MonoBehaviour
     public Vector3 swordRotation;
     public GameObject flagPole;
     public bool isAttacking;
+    public bool isAttackingChest;
+    public bool isAttackingEnemy;
     public GameObject attackRadiusOn;
     public float lifes;
+    public RaycastHit rayHit;
 
     private void Start()
     {
@@ -57,10 +60,33 @@ public class PlayerController : MonoBehaviour
             transform.gameObject.GetComponent<Health>().DoDamage(1);
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Physics.Raycast(transform.position, transform.forward, out rayHit, 2))
         {
-            isAttacking = true;
+            if (rayHit.collider.gameObject.tag == "Chest")
+            {
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    isAttackingChest = true;
+                }
+                else
+                {
+                    isAttackingChest = false;
+                }
+            }
+
+            if (rayHit.collider.gameObject.tag == "Enemy")
+            {
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    isAttackingEnemy = true;
+                }
+                else
+                {
+                    isAttackingEnemy = false;
+                }
+            }
         }
+
         else
         {
             isAttacking = false;

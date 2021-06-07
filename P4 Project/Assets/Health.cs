@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health;
+    public float health;
 
-    public void DoDamage(int damage)
+    public void DoDamage(float damage)
     {
         health -= damage;
     }
 
-    public void AddHealth(int healthadded)
+    public void AddHealth(float healthadded)
     {
         health += healthadded;
     }
