@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        lifes = 4;
+        lifes = 5;
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             lifes -= 1;
         }
 
-        if (lifes < 0)
+        if (lifes <= 0)
         {
             Destroy(gameObject);
         }
