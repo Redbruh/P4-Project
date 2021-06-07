@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        lifes = 5;
+        lifes = 4;
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position = checkpoint;
             GetComponent<Health>().health = 5;
             lifes -= 1;
+        }
+
+        if (lifes < 0)
+        {
+            Destroy(gameObject);
         }
 
         if (transform.position.y <= -10)
