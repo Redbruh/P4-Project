@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (transform.position.y <= -10)
         {
-            transform.gameObject.GetComponent<Health>().DoDamage(1);
+            transform.GetComponent<Health>().DoDamage(1);
         }
 
         if (Vector3.Distance(player.position, transform.position) <= range)
@@ -23,23 +23,10 @@ public class EnemyMovement : MonoBehaviour
             transform.LookAt(player);
             GetComponent<Transform>().Translate(Vector3.forward * Time.deltaTime * moveSpeed);
         }
+
         if (GetComponent<Health>().health <= 0)
         {
-            Destroy(gameObject);
-        }
-
-        if (Vector3.Distance(playerAttackRange.position, transform.position) <= playerCanAttackRange)
-        {
-            playerIsAttacking = true;
-        }
-        else
-        {
-            playerIsAttacking = false;
-        }
-
-        if (playerIsAttacking == true)
-        {
-            transform.gameObject.GetComponent<Health>().DoDamage(1);
+            Destroy(transform.gameObject);
         }
     }
 

@@ -110,11 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5322f9073144bc469df16066fbcc08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 5900353529474317297, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
   moveSpeed: 10
   range: 25
   playerIsAttacking: 0
-  playerCanAttackRange: 1
+  playerCanAttackRange: 5
   playerAttackRange: {fileID: 0}
 --- !u!114 &6645341637155989049
 MonoBehaviour:

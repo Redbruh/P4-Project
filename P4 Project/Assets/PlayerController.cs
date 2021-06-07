@@ -60,17 +60,13 @@ public class PlayerController : MonoBehaviour
             transform.gameObject.GetComponent<Health>().DoDamage(1);
         }
 
-        if (Physics.Raycast(transform.position, transform.forward, out rayHit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out rayHit, 5))
         {
             if (rayHit.collider.gameObject.tag == "Chest")
             {
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    isAttackingChest = true;
-                }
-                else
-                {
-                    isAttackingChest = false;
+                    rayHit.collider.GetComponent<Health>().DoDamage(1);
                 }
             }
 
@@ -78,11 +74,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    isAttackingEnemy = true;
-                }
-                else
-                {
-                    isAttackingEnemy = false;
+                    rayHit.collider.GetComponent<Health>().DoDamage(1);
                 }
             }
         }

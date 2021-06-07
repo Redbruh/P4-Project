@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4390872821468084134}
   - component: {fileID: 4390872821468084135}
   - component: {fileID: 3777540387622588682}
+  - component: {fileID: 1693421068451018758}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Chest
@@ -108,9 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6b7fe994b329a4cab5c48d2e2da512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerIsAttacking: 0
-  playerCanAttackRange: 1
-  playerAttackRange: {fileID: 5900353529474317297, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
-  crystals: {fileID: 9020900771233156796, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
+  player: {fileID: 5900353530840354675, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+  crystals: {fileID: 1649652227152093762, guid: 7527f500556ed284bb462aec10b9eb5e, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
+--- !u!114 &1693421068451018758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4390872821468084132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f4d166e2c0f7c49a245f5b155e239b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
