@@ -225,6 +225,11 @@ public class PlayerController : MonoBehaviour
         {
             flagPole.SetActive(true);
         }
+
+        if(isWalking == true)
+        {
+            gameObject.GetComponent<Animator>().Play("Walkanimation");
+        }
     }
     void OnCollisionEnter(Collision collision)
     {
