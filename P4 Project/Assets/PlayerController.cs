@@ -38,12 +38,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
-        animator = GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
     }
     void Update()
     {
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
+
 
         if (GetComponent<Health>().health <= 0)
         {
