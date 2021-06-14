@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameObject attackRadiusOn;
     public float lifes;
     public RaycastHit rayHit;
+    public Animator animator;
 
     private void Start()
     {
@@ -37,13 +38,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
 
-        if(GetComponent<Health>().health <= 0)
+        if (GetComponent<Health>().health <= 0)
         {
             gameObject.transform.position = checkpoint;
             GetComponent<Health>().health = 5;
@@ -115,8 +117,13 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector3(0, jumpHeight, 0);
             isGrounded = false;
+            animator.SetBool("Jump", true);
         }
 
+        if (isWalking == true)
+        {
+            animator.SetBool("Walk", true);
+        }
 
         if (Input.GetButton("Fire3") && isWalking == true)
         {
@@ -130,6 +137,7 @@ public class PlayerController : MonoBehaviour
         if(isWalking == false)
         {
             isSprinting = false;
+            animator.SetBool("Walk", false);
         }
 
         if (isSprinting == true && isWalking == true && isGrounded == true)
@@ -225,11 +233,6 @@ public class PlayerController : MonoBehaviour
         {
             flagPole.SetActive(true);
         }
-
-        if(isWalking == true)
-        {
-            gameObject.GetComponent<Animator>().Play("Walkanimation");
-        }
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -245,6 +248,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             runningTimer = 0;
+            animator.SetBool("Jump", false);
         }
     }
 }
