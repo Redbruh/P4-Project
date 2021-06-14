@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 4395304740467317449}
   - component: {fileID: 8568135604254771036}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +483,6 @@ MonoBehaviour:
   isAttackingEnemy: 0
   attackRadiusOn: {fileID: 4395304741339439909}
   lifes: 5
-  anim: {fileID: 0}
   animator: {fileID: 0}
 --- !u!114 &4395304740467317449
 MonoBehaviour:
@@ -507,7 +506,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4395304740467317450}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: ac8437d62ea4fc34cbb8bc348b847d8f, type: 3}
   m_Controller: {fileID: 9100000, guid: f763ecfb1c8a3f4409bdbb56197ec471, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
