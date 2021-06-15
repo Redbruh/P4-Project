@@ -46,10 +46,10 @@ public class PlayerController : MonoBehaviour
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
 
 
-        if (GetComponent<Health>().health <= 0)
+        if (GetComponent<Health>().currentHealth <= 0)
         {
             gameObject.transform.position = checkpoint;
-            GetComponent<Health>().health = 5;
+            GetComponent<Health>().currentHealth = 5;
             lifes -= 1;
         }
 

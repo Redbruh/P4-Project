@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
             GetComponent<Transform>().Translate(Vector3.forward * Time.deltaTime * moveSpeed);
         }
 
-        if (GetComponent<Health>().health <= 0)
+        if (GetComponent<Health>().currentHealth <= 0)
         {
             Destroy(transform.gameObject);
         }
@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Health>().DoDamage(1);
+            collision.gameObject.GetComponent<Health>().DoDamage(3);
         }
     }
 }
