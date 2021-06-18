@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6b7fe994b329a4cab5c48d2e2da512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5900353530840354675, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+  player: {fileID: 4395304740467317450, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
   crystals: {fileID: 1649652227152093762, guid: 7527f500556ed284bb462aec10b9eb5e, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1693421068451018758
@@ -124,4 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f4d166e2c0f7c49a245f5b155e239b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  maxHealth: 5
+  currentHealth: 1
+  healthbar: {fileID: 0}

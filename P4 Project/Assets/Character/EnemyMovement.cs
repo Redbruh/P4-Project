@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Health>().DoDamage(3);
+            collision.gameObject.GetComponent<Health>().DoDamage(1);
         }
     }
 }
