@@ -42,14 +42,24 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if(isGrounded == false)
+        {
+            animator.SetBool("Jump", true);
+            Debug.Log("Jumping");
+        }
+        else
+        {
+            animator.SetBool("Jump", false);
+            Debug.Log("Stopped Jumping");
+        }
+
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
 
-
-        if (GetComponent<Health>().currentHealth <= 0)
+        if (GetComponent<Health>().health <= 0)
         {
             gameObject.transform.position = checkpoint;
-            GetComponent<Health>().currentHealth = 5;
+            GetComponent<Health>().health = 5;
             lifes -= 1;
         }
 
@@ -120,10 +130,19 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
+        if (Input.GetButton("Jump"))
+        {
+        }
+
         if (isWalking == true)
         {
             animator.SetBool("Walk", true);
             Debug.Log("Walking");
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
+            Debug.Log("Stopped Walking");
         }
 
         if (Input.GetButton("Fire3") && isWalking == true)
@@ -138,7 +157,6 @@ public class PlayerController : MonoBehaviour
         if(isWalking == false)
         {
             isSprinting = false;
-            animator.SetBool("Walk", false);
         }
 
         if (isSprinting == true && isWalking == true && isGrounded == true)
@@ -234,17 +252,14 @@ public class PlayerController : MonoBehaviour
         {
             flagPole.SetActive(true);
         }
-
-        if (isGrounded == true)
-        {
-            animator.SetBool("Jump", true);
-        }
     }
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject)
         {
             isGrounded = true;
+            animator.SetBool("Jump", false);
+            Debug.Log("Not Jumping");
         }
         else
         {
@@ -254,7 +269,6 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             runningTimer = 0;
-            animator.SetBool("Jump", false);
         }
     }
 }

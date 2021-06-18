@@ -11,7 +11,7 @@ public class Chest : MonoBehaviour
     void Update()
     {
         spawnPos = transform.position;
-        if (GetComponent<Health>().currentHealth <= 0)
+        if (GetComponent<Health>().health <= 0)
         {
             Destroy(gameObject);
             Instantiate(crystals, spawnPos, Quaternion.identity);
