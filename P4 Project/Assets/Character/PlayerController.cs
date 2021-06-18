@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public float lifes;
     public RaycastHit rayHit;
     public Animator animator;
+    public GameObject characterModel;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
-        animator = gameObject.GetComponent<Animator>();
+        animator = characterModel.GetComponent<Animator>();
     }
     void Update()
     {

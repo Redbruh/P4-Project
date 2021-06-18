@@ -3182,25 +3182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 313204057}
---- !u!95 &593137401
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593137393}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ac8437d62ea4fc34cbb8bc348b847d8f, type: 3}
-  m_Controller: {fileID: 9100000, guid: f763ecfb1c8a3f4409bdbb56197ec471, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &594604711
 GameObject:
   m_ObjectHideFlags: 0
@@ -12092,6 +12073,10 @@ PrefabInstance:
       propertyPath: flagPole
       value: 
       objectReference: {fileID: 564602610}
+    - target: {fileID: 4395304740467317448, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
+      propertyPath: characterModel
+      value: 
+      objectReference: {fileID: 1845128904}
     - target: {fileID: 4395304740467317449, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
       propertyPath: slider
       value: 

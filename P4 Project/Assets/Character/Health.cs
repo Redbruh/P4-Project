@@ -6,15 +6,8 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 5;
     public int health;
-
     public Healthbar healthbar;
-
-    public void Start()
-    {
-        healthbar.SetMaxHealth(maxHealth);
-    }
 
     public void DoDamage(int damage)
     {
