@@ -118,12 +118,12 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector3(0, jumpHeight, 0);
             isGrounded = false;
-            animator.SetBool("Jump", true);
         }
 
         if (isWalking == true)
         {
             animator.SetBool("Walk", true);
+            Debug.Log("Walking");
         }
 
         if (Input.GetButton("Fire3") && isWalking == true)
@@ -233,6 +233,11 @@ public class PlayerController : MonoBehaviour
         if (crystalsCollected >= crystalsNeeded)
         {
             flagPole.SetActive(true);
+        }
+
+        if (isGrounded == true)
+        {
+            animator.SetBool("Jump", true);
         }
     }
     void OnCollisionEnter(Collision collision)
