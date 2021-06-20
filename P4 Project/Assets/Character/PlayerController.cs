@@ -30,8 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameObject attackRadiusOn;
     public float lifes;
     public RaycastHit rayHit;
-    public Animator animator;
-    public GameObject characterModel;
+    public bool isJumping;
 
     private void Start()
     {
@@ -39,20 +38,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
         attackRadiusOn.SetActive(false);
-        animator = characterModel.GetComponent<Animator>();
     }
     void Update()
     {
-        if(isGrounded == false)
-        {
-            animator.SetBool("Jump", true);
-            Debug.Log("Jumping");
-        }
-        else
-        {
-            animator.SetBool("Jump", false);
-            Debug.Log("Stopped Jumping");
-        }
 
         Vector3 cloudSpawnRandomizer = new Vector3(Random.Range(-0.5f, 0.5f), -0.5f, Random.Range(-0.5f, 0.5f));
         Vector3 cloudSpawnPosition = transform.position + cloudSpawnRandomizer;
@@ -127,23 +115,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            isJumping = true;
             rb.velocity = new Vector3(0, jumpHeight, 0);
             isGrounded = false;
-        }
-
-        if (Input.GetButton("Jump"))
-        {
-        }
-
-        if (isWalking == true)
-        {
-            animator.SetBool("Walk", true);
-            Debug.Log("Walking");
-        }
-        else
-        {
-            animator.SetBool("Walk", false);
-            Debug.Log("Stopped Walking");
         }
 
         if (Input.GetButton("Fire3") && isWalking == true)
@@ -259,8 +233,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject)
         {
             isGrounded = true;
-            animator.SetBool("Jump", false);
-            Debug.Log("Not Jumping");
+            isJumping = false;
         }
         else
         {
