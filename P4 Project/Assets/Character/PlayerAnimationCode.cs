@@ -16,24 +16,25 @@ public class PlayerAnimationCode : MonoBehaviour
     {
         if (player.GetComponent<PlayerController>().isJumping == true)
         {
-            //animator.SetBool("Jump", true);
             gameObject.GetComponent<Animator>().SetBool("Jump", true);
             Debug.Log("Jumping");
         }
-        else
-        {
-            Debug.Log("Not Jumping");
-        }
-
 
         if (player.GetComponent<PlayerController>().isWalking == true)
         {
-            //animator.SetBool("Walk", true);
             gameObject.GetComponent<Animator>().SetBool("Walk", true);
             Debug.Log("Walking");
         }
-        else
+
+        if (player.GetComponent<PlayerController>().isJumping == false)
         {
+            gameObject.GetComponent<Animator>().SetBool("Jump", false);
+            Debug.Log("Not Jumping");
+        }
+
+        if (player.GetComponent<PlayerController>().isWalking == false)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Walk", false);
             Debug.Log("Not Walking");
         }
     }
