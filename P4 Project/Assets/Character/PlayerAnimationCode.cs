@@ -6,52 +6,48 @@ public class PlayerAnimationCode : MonoBehaviour
 {
     public Animator animator;
     public GameObject player;
-    public bool activateJumpAnimation;
-    public bool activateWalkAnimation;
 
     void Start()
     {
-        animator = gameObject.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         if (player.GetComponent<PlayerController>().isJumping == true)
         {
-            activateJumpAnimation = true;
-        }
-        if (player.GetComponent<PlayerController>().isWalking == true)
-        {
-            activateWalkAnimation = true;
-        }
-        if (player.GetComponent<PlayerController>().isJumping == false)
-        {
-            activateJumpAnimation = false;
-        }
-        if (player.GetComponent<PlayerController>().isWalking == false)
-        {
-            activateWalkAnimation = false;
+            gameObject.GetComponent<Animator>().SetBool("Jump", true);
+            Debug.Log("Should Jump");
         }
 
-        if (activateJumpAnimation == true)
-        {
-            gameObject.GetComponent<Animator>().SetBool("Jump", true);
-            Debug.Log("Jumping");
-        }
-        if (activateJumpAnimation == false)
+        if (player.GetComponent<PlayerController>().isJumping == false)
         {
             gameObject.GetComponent<Animator>().SetBool("Jump", false);
-            Debug.Log("Not Jumping");
+            Debug.Log("Should Stop Jumping");
         }
-        if (activateWalkAnimation == true)
+
+        if (player.GetComponent<PlayerController>().isWalking == true)
         {
             gameObject.GetComponent<Animator>().SetBool("Walk", true);
-            Debug.Log("Walking");
+            Debug.Log("Should Walk");
         }
-        if (activateWalkAnimation == false)
+
+        if (player.GetComponent<PlayerController>().isWalking == false)
         {
             gameObject.GetComponent<Animator>().SetBool("Walk", false);
-            Debug.Log("Not Walking");
+            Debug.Log("Should Stop Walking");
+        }
+
+        if (player.GetComponent<PlayerController>().isAttacking == true)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Swing", true);
+            Debug.Log("Should Swing Sword");
+        }
+
+        if (player.GetComponent<PlayerController>().isAttacking == false)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Swing", false);
+            Debug.Log("Should Stop Swinging Sword");
         }
     }
 }

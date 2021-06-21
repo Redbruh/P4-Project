@@ -6,13 +6,16 @@ public class Crystal : MonoBehaviour
 {
     public Transform player;
     public float range;
+    public Vector3 rotation;
 
     public void Update()
     {
+        transform.Rotate(rotation * Time.deltaTime);
+
         if (Vector3.Distance(player.position, transform.position) <= range)
         {
             player.GetComponent<PlayerController>().crystalsCollected += 1;
-            Destroy(gameObject);
+            Destroy(transform.gameObject);
         }
     }
 }

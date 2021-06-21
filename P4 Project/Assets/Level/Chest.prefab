@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4395304740467317450, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
-  crystals: {fileID: 1649652227152093762, guid: 7527f500556ed284bb462aec10b9eb5e, type: 3}
+  crystals: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1693421068451018758
 MonoBehaviour:

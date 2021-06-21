@@ -445,6 +445,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3331684016992457993}
   player: {fileID: 4395304740467317450}
+  activateJumpAnimation: 0
+  activateWalkAnimation: 0
 --- !u!1 &4395304740467317450
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +589,7 @@ MonoBehaviour:
   isGrounded: 0
   isFalling: 0
   checkpoint: {x: 0, y: 0, z: 0}
-  cloudsToSpawn: {fileID: 8669502249306159020, guid: 9416281f50f3d5d4190664cab38b3575, type: 3}
+  cloudsToSpawn: {fileID: 5110472659346846917, guid: 94854dec042d5a7469c21a7a44936841, type: 3}
   cloudTimer: 0.2
   maxCloudTimer: 0
   crystalsCollected: 0

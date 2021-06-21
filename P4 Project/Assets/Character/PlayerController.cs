@@ -86,6 +86,15 @@ public class PlayerController : MonoBehaviour
             isAttacking = false;
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            isAttacking = true;
+        }
+        else
+        {
+            isAttacking = false;
+        }
+
         if (isAttacking == true)
         {
             attackRadiusOn.SetActive(true);
