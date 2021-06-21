@@ -110,9 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5322f9073144bc469df16066fbcc08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5900353529474317297, guid: a0fb189af97e4374f93661933e1b5164, type: 3}
+  player: {fileID: 4395304739615206984, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
   moveSpeed: 10
-  range: 25
+  range: 16
   playerIsAttacking: 0
   playerCanAttackRange: 5
   playerAttackRange: {fileID: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  healthbar: {fileID: 0}
 --- !u!54 &6645341637155989055
 Rigidbody:
   m_ObjectHideFlags: 0
