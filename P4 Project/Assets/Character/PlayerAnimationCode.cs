@@ -6,6 +6,8 @@ public class PlayerAnimationCode : MonoBehaviour
 {
     public Animator animator;
     public GameObject player;
+    public bool activateJumpAnimation;
+    public bool activateWalkAnimation;
 
     void Start()
     {
@@ -16,23 +18,37 @@ public class PlayerAnimationCode : MonoBehaviour
     {
         if (player.GetComponent<PlayerController>().isJumping == true)
         {
+            activateJumpAnimation = true;
+        }
+        if (player.GetComponent<PlayerController>().isWalking == true)
+        {
+            activateWalkAnimation = true;
+        }
+        if (player.GetComponent<PlayerController>().isJumping == false)
+        {
+            activateJumpAnimation = false;
+        }
+        if (player.GetComponent<PlayerController>().isWalking == false)
+        {
+            activateWalkAnimation = false;
+        }
+
+        if (activateJumpAnimation == true)
+        {
             gameObject.GetComponent<Animator>().SetBool("Jump", true);
             Debug.Log("Jumping");
         }
-
-        if (player.GetComponent<PlayerController>().isWalking == true)
-        {
-            gameObject.GetComponent<Animator>().SetBool("Walk", true);
-            Debug.Log("Walking");
-        }
-
-        if (player.GetComponent<PlayerController>().isJumping == false)
+        if (activateJumpAnimation == false)
         {
             gameObject.GetComponent<Animator>().SetBool("Jump", false);
             Debug.Log("Not Jumping");
         }
-
-        if (player.GetComponent<PlayerController>().isWalking == false)
+        if (activateWalkAnimation == true)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Walk", true);
+            Debug.Log("Walking");
+        }
+        if (activateWalkAnimation == false)
         {
             gameObject.GetComponent<Animator>().SetBool("Walk", false);
             Debug.Log("Not Walking");
