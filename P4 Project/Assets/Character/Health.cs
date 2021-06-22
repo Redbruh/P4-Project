@@ -7,17 +7,23 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public int health;
-    public Healthbar healthbar;
 
     public void DoDamage(int damage)
     {
         health -= damage;
-
-        healthbar.SetHealth(health);
     }
 
     public void AddHealth(int healthadded)
     {
         health += healthadded;
-    }           
+    }
+
+    public Image hpBar;
+    public int maxHealth;
+
+    public void HpBarSlider()
+    {
+        hpBar.fillAmount = (float)health / (float)maxHealth;
+    }
 }
+

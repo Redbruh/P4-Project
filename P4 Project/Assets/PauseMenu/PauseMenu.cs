@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenue;
-    public GameObject healthBar;
+   
 
     public void ExitGame()
     {
@@ -16,18 +16,17 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        pauseMenue.SetActive(false);
-        healthBar.SetActive(true);
+        pauseMenue.SetActive(false);        
         Time.timeScale = 1f;
     }
 
     public void Update()
     {
-        if (Input.GetButtonDown("Escape"))
+        if (Input.GetButtonDown("Cancel"))
         {
-            healthBar.SetActive(false);
+
             pauseMenue.SetActive(true);
-            
+
             if (Time.timeScale == 1f)
             {
                 Time.timeScale = 0f;
@@ -35,13 +34,16 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 Time.timeScale = 1f;
-            }
+            }           
         }
 
-        if (Input.GetButtonDown("Escape")) 
+        if (Input.GetButtonDown("Cancel"))
         {
-            Cursor.lockState = CursorLockMode.None; 
-        }
-           
+            Cursor.lockState = CursorLockMode.None;
+            if (Input.GetButtonDown("Cancel"))
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+            }
+        }           
     }
 }
