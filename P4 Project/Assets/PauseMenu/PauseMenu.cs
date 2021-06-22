@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
             if (Input.GetButtonDown("Cancel"))
             {
                 Cursor.lockState = CursorLockMode.Confined;
-            }
+            }            
         }           
     }
 }

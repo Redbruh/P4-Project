@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,6 +34,8 @@ public class PlayerController : MonoBehaviour
     public RaycastHit rayHit;
     public bool isJumping;
 
+    public GameObject deathScene;
+
     private void Start()
     {
         lifes = 5;
@@ -54,8 +58,10 @@ public class PlayerController : MonoBehaviour
 
         if (lifes <= 0)
         {
-            Destroy(gameObject);
-        }
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f;
+            deathScene.SetActive(true);
+        }      
 
         if (transform.position.y <= -10)
         {
@@ -253,5 +259,10 @@ public class PlayerController : MonoBehaviour
         {
             runningTimer = 0;
         }
+    }   
+
+    public void DeathExit()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

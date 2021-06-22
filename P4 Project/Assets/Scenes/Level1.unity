@@ -869,14 +869,14 @@ RectTransform:
   m_GameObject: {fileID: 142830495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 533919787}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 434}
+  m_AnchoredPosition: {x: 8, y: 360}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142830497
@@ -2731,7 +2731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &533919784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3107,6 +3107,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4395304740467317450, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
   m_PrefabInstance: {fileID: 4395304740959786043}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &593137395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5181227049314279995, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
+  m_PrefabInstance: {fileID: 4395304740959786043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593137393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8369d5fdb2971945bd452e7881311e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594604711
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,7 +3666,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &635831734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5780,7 +5791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1157177669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5876,8 +5887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203cd23e40c0b9b4bb040b8d57fb491b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 1308358070}
-  maxHealth: 5
 --- !u!1 &1159819922
 GameObject:
   m_ObjectHideFlags: 0
@@ -11651,7 +11660,7 @@ RectTransform:
   m_GameObject: {fileID: 1978975788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 635831732}
   m_Father: {fileID: 533919787}
@@ -11705,7 +11714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1978975791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 593137395}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: DeathExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1978975791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12910,6 +12931,10 @@ PrefabInstance:
       propertyPath: flagPole
       value: 
       objectReference: {fileID: 564602610}
+    - target: {fileID: 5181227049314279995, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
+      propertyPath: deathScene
+      value: 
+      objectReference: {fileID: 533919783}
     - target: {fileID: 5181227049314279995, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
       propertyPath: isAttacking
       value: 0
