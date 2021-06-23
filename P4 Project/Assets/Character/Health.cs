@@ -8,22 +8,22 @@ public class Health : MonoBehaviour
 {
     public int health;
 
+    public Image hpBar;
+    public int maxHealth;
+
     public void DoDamage(int damage)
     {
         health -= damage;
+        hpBar.fillAmount = (float)health / (float)maxHealth;      
+        if(hpBar.fillAmount == 0)
+        {
+            hpBar.fillAmount = 1;
+        }
     }
 
     public void AddHealth(int healthadded)
     {
         health += healthadded;
-    }
-
-    public Image hpBar;
-    public int maxHealth;
-
-    public void HpBarSlider()
-    {
-        hpBar.fillAmount = (float)health / (float)maxHealth;
-    }
+    }           
 }
 

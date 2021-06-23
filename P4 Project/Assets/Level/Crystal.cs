@@ -14,7 +14,7 @@ public class Crystal : MonoBehaviour
 
         if (Vector3.Distance(player.position, transform.position) <= range)
         {
-            CounterGems.theScore += 1;
+            GemCounter.scoreNum += 1;
             player.GetComponent<PlayerController>().crystalsCollected += 1;
             Destroy(transform.gameObject);
         }

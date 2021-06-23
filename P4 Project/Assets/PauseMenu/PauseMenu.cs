@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenue.SetActive(false);        
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Update()
@@ -42,7 +43,7 @@ public class PauseMenu : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             if (Input.GetButtonDown("Cancel"))
             {
-                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.lockState = CursorLockMode.Confined;                
             }            
         }           
     }

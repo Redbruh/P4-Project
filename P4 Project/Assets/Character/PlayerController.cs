@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
     public bool isJumping;
 
     public GameObject deathScene;
+    public GameObject winMessage;
+    public GameObject winExit;
 
     private void Start()
     {
@@ -51,10 +53,10 @@ public class PlayerController : MonoBehaviour
 
         if (GetComponent<Health>().health <= 0)
         {
-            gameObject.transform.position = checkpoint;
+            gameObject.transform.position = checkpoint;           
             GetComponent<Health>().health = 5;
-            lifes -= 1;
-        }
+            lifes -= 1;           
+        }               
 
         if (lifes <= 0)
         {
@@ -241,6 +243,7 @@ public class PlayerController : MonoBehaviour
         if (crystalsCollected >= crystalsNeeded)
         {
             flagPole.SetActive(true);
+            winMessage.SetActive(true);
         }
     }
     void OnCollisionEnter(Collision collision)
@@ -264,5 +267,16 @@ public class PlayerController : MonoBehaviour
     public void DeathExit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void OnTriggerEnter(Collider pole)
+    {
+        winMessage.SetActive(false);
+        if (flagPole == true)
+        {
+            Cursor.lockState = CursorLockMode.None;           
+            winExit.SetActive(true);           
+            Time.timeScale = 0f;           
+        }
     }
 }

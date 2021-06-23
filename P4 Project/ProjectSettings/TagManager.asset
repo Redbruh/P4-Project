@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Crystal
   - Chest
+  - Gemsss
+  - FlagPole
   layers:
   - Default
   - TransparentFX
