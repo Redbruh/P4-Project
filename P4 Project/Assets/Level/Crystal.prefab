@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5451125290530512341}
   - component: {fileID: 5451125290530512338}
   - component: {fileID: -1374651300985790929}
+  - component: {fileID: 8846500175904971368}
   m_Layer: 0
   m_Name: Crystal
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,5 +96,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4395304739615206984, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
-  range: 3
+  range: 1
   rotation: {x: 0, y: 360, z: 0}
+--- !u!65 &8846500175904971368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451125290530512336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 88.69048, y: 134.36485, z: 28.147709}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0}

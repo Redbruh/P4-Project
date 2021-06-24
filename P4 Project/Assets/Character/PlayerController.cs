@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     public GameObject winExit;
 
     private void Start()
-    {
+    {       
         lifes = 5;
         rb = GetComponent<Rigidbody>();
         flagPole.SetActive(false);
@@ -272,11 +272,11 @@ public class PlayerController : MonoBehaviour
     public void OnTriggerEnter(Collider pole)
     {
         winMessage.SetActive(false);
-        if (flagPole == true)
+        if (pole.gameObject.CompareTag("FlagPole"))
         {
             Cursor.lockState = CursorLockMode.None;           
             winExit.SetActive(true);           
             Time.timeScale = 0f;           
         }
-    }
+    }    
 }

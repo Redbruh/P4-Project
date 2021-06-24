@@ -234,24 +234,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 1967351682}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &51251033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1405823113}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &51251037
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51251033}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &60212780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -421,24 +403,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &74857375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1302093770}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &74857379
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74857375}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &75157931
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,24 +746,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &138020984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1533016154}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &138020988
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138020984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &138536713
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,24 +921,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142830495}
   m_CullTransparentMesh: 1
---- !u!1 &142911781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 367004436}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &142911785
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142911781}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0.00012207031, z: 0}
 --- !u!4 &152572482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -1015,11 +943,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (23)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -1107,42 +1035,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &164599631 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1644665369}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &164599635
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164599631}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &170591289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 2058239431}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &170591293
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170591289}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &170651182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,11 +1231,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (26)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -1436,24 +1328,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 945799277}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &248021334 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 5451125292203584873}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &248021338
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248021334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &249682405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -1777,11 +1651,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (24)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -1931,11 +1805,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (29)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2214,11 +2088,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (16)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2386,24 +2260,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433267189}
   m_CullTransparentMesh: 1
---- !u!1 &448651227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1436906741}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &448651231
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448651227}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!1001 &452683588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2477,24 +2333,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31bdedd10a7e9847a2f6dcd0df5908c, type: 3}
---- !u!1 &459576936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1087614637}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &459576940
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459576936}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &461436830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2512,11 +2350,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (4)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2626,11 +2464,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (27)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2735,7 +2573,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2823,24 +2661,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &474629560 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 471057975}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &474629564
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474629560}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00024032593, y: 0, z: 0}
 --- !u!4 &478419024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4390872821468084136, guid: 540a529b26788dd4189942e1a50fd90a, type: 3}
@@ -2863,7 +2683,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -2968,11 +2788,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (13)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -3077,11 +2897,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (15)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -3276,24 +3096,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &535650812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1118682852}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &535650816
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535650812}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &536099285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -3321,7 +3123,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -3518,7 +3320,7 @@ GameObject:
   - component: {fileID: 564602611}
   m_Layer: 0
   m_Name: pole
-  m_TagString: Untagged
+  m_TagString: FlagPole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3600,24 +3402,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &578186733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 857203422}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &578186737
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578186733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &587326978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,24 +3481,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587326978}
   m_CullTransparentMesh: 1
---- !u!1 &591952377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 708448212}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &591952381
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591952377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &593137393 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4395304740467317450, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
@@ -3731,6 +3497,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8369d5fdb2971945bd452e7881311e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &593137400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593137393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9b0d4033d105a408a59bee09f54467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 396267786}
+  scoreNum: 0
+  winMessage: {fileID: 1534116177}
+  flagPole: {fileID: 564602610}
 --- !u!1 &594604711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,11 +3798,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (9)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -4125,11 +3907,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (6)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -4506,11 +4288,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (14)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -4615,7 +4397,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -4798,24 +4580,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731542626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &737119934 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 730564762}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &737119938
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737119934}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &760434383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4833,7 +4597,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -4926,24 +4690,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6645341637155989054, guid: b31bdedd10a7e9847a2f6dcd0df5908c, type: 3}
   m_PrefabInstance: {fileID: 1350276893}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &781302873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 945799277}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &781302877
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781302873}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &781746339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4390872821468084136, guid: 540a529b26788dd4189942e1a50fd90a, type: 3}
@@ -4966,7 +4712,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -5149,60 +4895,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791678473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &825479116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1274781527}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &825479120
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825479116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &833464278 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1464364301}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &833464282
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833464278}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
---- !u!1 &846454229 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1501078540}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &846454233
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846454229}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &857203422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5220,11 +4912,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (28)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -5312,24 +5004,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &871395335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1449176291}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &871395339
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871395335}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &872899428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -5352,11 +5026,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (8)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -5444,24 +5118,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &905901718 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 343529746}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &905901722
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905901718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &934053904
 GameObject:
   m_ObjectHideFlags: 0
@@ -5584,11 +5240,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (30)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -5761,24 +5417,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963937275}
   m_CullTransparentMesh: 1
---- !u!1 &998697644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1967351682}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &998697648
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998697644}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1002459614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,24 +5751,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070709600}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1074495190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 788527975}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1074495194
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074495190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1078653865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -6158,7 +5778,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -6324,7 +5944,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -6591,24 +6211,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 367004436}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1150319541 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 461436830}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1150319545
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150319541}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!1 &1157177668
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,42 +6526,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 1963946819}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1205117566 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 2046240830}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1205117570
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205117566}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &1208976651 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1466844178}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1208976655
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208976651}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!4 &1215057322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -7548,24 +7114,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1274384571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 231443080}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1274384575
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274384571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &1274781527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7583,11 +7131,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (20)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -7697,7 +7245,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -7802,11 +7350,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (21)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -8069,24 +7617,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 538266236}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1332685836 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 336276607}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1332685840
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332685836}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &1334233272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,11 +7634,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (1)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -8382,11 +7912,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (10)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -8779,7 +8309,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -8867,83 +8397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &1389203375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1963946819}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1389203379
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389203375}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1389856639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 461436830}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1390832331 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1588818628}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1390832335
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390832331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &1392234770 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1941601091}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1392234774
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392234770}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &1395623992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 478547957}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1395623996
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395623992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1399871421
 GameObject:
   m_ObjectHideFlags: 0
@@ -9039,24 +8497,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399871421}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1403841787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 2007247641}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1403841791
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403841787}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &1405823113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9074,11 +8514,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (11)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -9384,11 +8824,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (5)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -9729,7 +9169,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -9817,24 +9257,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &1450570206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1779049162}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1450570210
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450570206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!4 &1463643427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -9857,11 +9279,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (7)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -9966,11 +9388,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (2)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -10075,7 +9497,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -10353,7 +9775,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -10458,11 +9880,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (19)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -10927,12 +10349,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1881504371}
     - target: {fileID: -1374651300985790929, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
+      propertyPath: range
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1374651300985790929, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -11117,24 +10543,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1602173288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1334233272}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1602173292
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602173288}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!4 &1604907772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -11172,7 +10580,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -11260,24 +10668,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &1663195988 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 2136698165}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1663195992
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663195988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1683363096
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,24 +10739,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
   m_PrefabInstance: {fileID: 613540521}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1687845456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1888485106}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1687845460
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687845456}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1691716450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -11505,24 +10877,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730142494}
   m_CullTransparentMesh: 1
---- !u!1 &1730588019 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 538266236}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1730588023
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730588019}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &1742901752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11596,24 +10950,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31bdedd10a7e9847a2f6dcd0df5908c, type: 3}
---- !u!1 &1748939061 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 471014044}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1748939065
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748939061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1749890833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -11714,24 +11050,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1772247235 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 491322275}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1772247239
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772247235}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1773861025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -11759,11 +11077,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (3)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -11851,24 +11169,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &1783786961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1385998959}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1783786965
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783786961}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1787936802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -11949,24 +11249,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792510243}
   m_CullTransparentMesh: 1
---- !u!1 &1806670758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 412402672}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1806670762
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806670758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1812180014
 GameObject:
   m_ObjectHideFlags: 0
@@ -12158,24 +11440,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1824440666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 613540521}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1824440670
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824440666}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!4 &1829788205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5451125290530512340, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
@@ -12205,19 +11469,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1845128911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845128904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be9b0d4033d105a408a59bee09f54467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 396267786}
 --- !u!135 &1845128912
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12331,42 +11582,6 @@ Transform:
   m_Father: {fileID: 1812965775}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1859989852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 483474692}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1859989856
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859989852}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &1868368382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1353687871}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1868368386
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868368382}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1878203931
 GameObject:
   m_ObjectHideFlags: 0
@@ -12478,11 +11693,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (25)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -12782,7 +11997,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -12870,42 +12085,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &1948038578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 760434383}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1948038582
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948038578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &1949609905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 887533867}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1949609909
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949609905}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!1 &1953593937
 GameObject:
   m_ObjectHideFlags: 0
@@ -13018,7 +12197,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -13204,11 +12383,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (12)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -13451,11 +12630,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (17)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -13740,7 +12919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -13850,11 +13029,11 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_Name
-      value: Crystal (18)
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -13942,42 +13121,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
---- !u!1 &2059776177 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1302719841}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &2059776181
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059776177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &2072078326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 1470580117}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &2072078330
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072078326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &2072306450
 GameObject:
   m_ObjectHideFlags: 0
@@ -14180,42 +13323,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2106866335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 163073248}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &2106866339
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106866335}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!1 &2114802317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  m_PrefabInstance: {fileID: 621882000}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &2114802321
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114802317}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 67.18243
-  m_Center: {x: 0.00048446655, y: 0, z: 0}
 --- !u!1 &2119978929
 GameObject:
   m_ObjectHideFlags: 0
@@ -14407,7 +13514,7 @@ PrefabInstance:
       objectReference: {fileID: 1881504371}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
@@ -14851,7 +13958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: m_TagString
-      value: Gemsss
+      value: Crystal
       objectReference: {fileID: 0}
     - target: {fileID: 5451125290530512339, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
       propertyPath: player
