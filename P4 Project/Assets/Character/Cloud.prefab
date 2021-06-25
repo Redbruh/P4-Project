@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3988963876607905884}
   - component: {fileID: 4719918695273550114}
   - component: {fileID: 4223401209417939130}
-  - component: {fileID: -826523390299281829}
+  - component: {fileID: 7968493686885581772}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5110472659346846917}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 5.366316, y: -0.91199684, z: -11.826881}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!33 &4719918695273550114
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5110472659346846917}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5495902117074765545, guid: 1b59a73f5e4205c4dbf71b7ec1065185, type: 3}
 --- !u!23 &4223401209417939130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-826523390299281829
+--- !u!114 &7968493686885581772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,6 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8b2a73c1242e0478ca9bed7316069a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4395304739615206984, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
-  despawn: 0
-  cloudMoveSpeed: 5
+  player: {fileID: 0}
+  despawn: 0.5
+  cloudMoveSpeed: 0

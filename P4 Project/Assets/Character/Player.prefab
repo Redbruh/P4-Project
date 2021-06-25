@@ -430,7 +430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthbar: {fileID: 0}
+  hpBar: {fileID: 0}
+  maxHealth: 0
+  enemyHp: {fileID: 0}
+  livesCounter: 0
+  livesText: {fileID: 0}
 --- !u!114 &7469624297015047729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,8 +449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3331684016992457993}
   player: {fileID: 4395304740467317450}
-  activateJumpAnimation: 0
-  activateWalkAnimation: 0
 --- !u!1 &4395304740467317450
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +591,7 @@ MonoBehaviour:
   isGrounded: 0
   isFalling: 0
   checkpoint: {x: 0, y: 0, z: 0}
-  cloudsToSpawn: {fileID: 5110472659346846917, guid: 94854dec042d5a7469c21a7a44936841, type: 3}
+  cloudsToSpawn: {fileID: 8669502249306159020, guid: 9416281f50f3d5d4190664cab38b3575, type: 3}
   cloudTimer: 0.2
   maxCloudTimer: 0
   crystalsCollected: 0
@@ -603,6 +605,12 @@ MonoBehaviour:
   attackRadiusOn: {fileID: 4395304741339439909}
   lifes: 5
   isJumping: 0
+  constantUI: {fileID: 0}
+  deathScene: {fileID: 0}
+  winMessage: {fileID: 0}
+  winExit: {fileID: 0}
+  camera1: {fileID: 0}
+  camera2: {fileID: 0}
 --- !u!114 &3239461688149499773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,7 +624,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthbar: {fileID: 0}
+  hpBar: {fileID: 0}
+  maxHealth: 0
+  enemyHp: {fileID: 0}
+  livesCounter: 0
+  livesText: {fileID: 0}
 --- !u!1 &4395304741339439909
 GameObject:
   m_ObjectHideFlags: 0
