@@ -247,7 +247,7 @@ public class PlayerController : MonoBehaviour
         {
             flagPole.SetActive(true);
             winMessage.SetActive(true);
-        }
+        }               
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -276,6 +276,7 @@ public class PlayerController : MonoBehaviour
     {        
         if (pole.gameObject.CompareTag("FlagPole"))
         {
+            Destroy(winMessage);
             constantUI.SetActive(false);
             winMessage.SetActive(false);
             camera2.SetActive(true);
