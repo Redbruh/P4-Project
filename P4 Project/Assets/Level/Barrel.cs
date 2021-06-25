@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Barrel : MonoBehaviour
 {
+    public GameObject barrel;
     public GameObject player;
     public GameObject crystals;
     public Vector3 spawnPos1;
@@ -20,7 +21,7 @@ public class Barrel : MonoBehaviour
 
         if (GetComponent<Health>().health <= 0)
         {
-            Destroy(transform.gameObject);
+            Destroy(barrel);
             Instantiate(crystals, spawnPos1, Quaternion.identity);
             Instantiate(crystals, spawnPos2, Quaternion.identity);
             Instantiate(crystals, spawnPos3, Quaternion.identity);

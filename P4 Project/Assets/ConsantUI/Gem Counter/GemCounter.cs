@@ -20,7 +20,7 @@ public class GemCounter : MonoBehaviour
 
     public void Update()
     {
-        if(scoreNum >= 75)
+        if(scoreNum >= 65)
         {
             flagPole.SetActive(true);
             winMessage.SetActive(true);
@@ -39,6 +39,6 @@ public class GemCounter : MonoBehaviour
 
     public void UpdateScoreText()
     {
-        scoreText.text = "75/" + scoreNum;
+        scoreText.text = scoreNum + "/65";
     }
 }

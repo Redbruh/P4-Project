@@ -127,12 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6b7fe994b329a4cab5c48d2e2da512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  barrel: {fileID: 2536859514350088503}
+  player: {fileID: 4395304740467317450, guid: 8d4207497d0b08341a8e9c7728162ec9, type: 3}
   crystals: {fileID: 5451125290530512336, guid: 8c4ced4a79feba84492ac14687cb0c63, type: 3}
-  spawnPos1: {x: 0, y: 0, z: 0}
-  spawnPos2: {x: 0, y: 0, z: 0}
-  spawnPos3: {x: 0, y: 0, z: 0}
-  spawnPos4: {x: 0, y: 0, z: 0}
+  spawnPos1: {x: 1, y: 0, z: 0}
+  spawnPos2: {x: 1.5, y: 0.2, z: 0}
+  spawnPos3: {x: 2, y: 1, z: 0}
+  spawnPos4: {x: 0.1, y: 0.5, z: 0}
 --- !u!114 &694885704606639188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +162,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1
-  m_Height: 2
+  m_Radius: 61.845448
+  m_Height: 163.35098
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 2.826357, y: 1.0284066, z: 0.6113529}
