@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float sensitivity;
-    public Transform playerBody;
+    public Transform playerBody;    
     float xRotation;
 
     void Start()
@@ -19,6 +19,7 @@ public class CameraController : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
         playerBody.Rotate(Vector3.up * mouseX);
+               
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);

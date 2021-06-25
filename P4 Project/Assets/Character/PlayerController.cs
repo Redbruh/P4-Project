@@ -34,9 +34,12 @@ public class PlayerController : MonoBehaviour
     public RaycastHit rayHit;
     public bool isJumping;
 
+    public GameObject constantUI;
     public GameObject deathScene;
     public GameObject winMessage;
     public GameObject winExit;
+    public GameObject camera1;
+    public GameObject camera2;
 
     private void Start()
     {       
@@ -270,13 +273,16 @@ public class PlayerController : MonoBehaviour
     }
 
     public void OnTriggerEnter(Collider pole)
-    {
-        winMessage.SetActive(false);
+    {        
         if (pole.gameObject.CompareTag("FlagPole"))
         {
-            Cursor.lockState = CursorLockMode.None;           
-            winExit.SetActive(true);           
-            Time.timeScale = 0f;           
+            constantUI.SetActive(false);
+            winMessage.SetActive(false);
+            camera2.SetActive(true);
+            winExit.SetActive(true);
+            Time.timeScale = 0f;
+            camera1.SetActive(false);                   
+            Cursor.lockState = CursorLockMode.None;
         }
     }    
 }
