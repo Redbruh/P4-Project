@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out rayHit, 5))
         {
-            if (rayHit.collider.gameObject.tag == "Chest")
+            if (rayHit.collider.gameObject.tag == "Barrel")
             {
                 if (Input.GetButtonDown("Fire1"))
                 {

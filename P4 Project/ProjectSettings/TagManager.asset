@@ -7,9 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - Crystal
-  - Chest
   - Gemsss
   - FlagPole
+  - Barrel
   layers:
   - Default
   - TransparentFX
